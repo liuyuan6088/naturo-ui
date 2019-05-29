@@ -177,6 +177,9 @@ module.exports = {
                 loader: require.resolve('css-loader'),
                 options: {
                   importLoaders: 1,
+                  minimize: true,
+                  modules: true,
+                  localIdentName: '[local]',
                 },
               },
               {
@@ -203,6 +206,10 @@ module.exports = {
                 loader: require.resolve('less-loader'),
               },
             ],
+          },
+          {
+            test: /\.md$/,
+            loader: `babel-loader!${path.join(__dirname, './addImportLoader.js')}`
           },
           // "file" loader makes sure those assets get served by WebpackDevServer.
           // When you `import` an asset, you get its (virtual) filename.

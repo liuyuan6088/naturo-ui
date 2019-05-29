@@ -131,6 +131,10 @@ module.exports = {
         include: paths.appSrc,
       },
       {
+        test: /\.md$/,
+        loader: `babel-loader!${path.join(__dirname, './addImportLoader.js')}`
+      },
+      {
         // "oneOf" will traverse all following loaders until one will
         // match the requirements. When no loader matches it will fall
         // back to the "file" loader at the end of the loader list.
@@ -199,6 +203,7 @@ module.exports = {
                         importLoaders: 1,
                         minimize: true,
                         sourceMap: shouldUseSourceMap,
+                        modules: true,
                       },
                     },
                     {

@@ -37,23 +37,35 @@ html body {
 
 .layout {
   width: 100vw;
-  height: 100vh;
+  min-height: 100vh;
   .header {
-    text-align: center;
-    line-height: 80px;
-    height: 80px;
-    border-bottom: 1px solid #000;
+    box-shadow: 0 2px 8px #f0f1f2;
+    .logo {
+      font-size: 16px;
+      padding: 20px 0;
+      padding-left: 75px;
+      color: #1890ff;
+    }
   }
   .container {
     display: flex;
-    height: calc(100vh - 80px);
+    min-height: calc(100vh - 64px);
     .siderbar {
       height: 100%;
-      width: 120px;
-      border-right: 1px solid #000;
+      width: 200px;
+      padding: 10px 0;
+      a {
+        color: #314659!important;
+        font-size: 18px;
+        display: block;
+        text-align: center;
+        padding: 10px 0;
+      }
     }
     .content {
       flex: 1;
+      padding-top: 20px;
+      border-left: 1px solid #ccc;
     }
   }
 }

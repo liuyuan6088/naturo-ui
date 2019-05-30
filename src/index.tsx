@@ -22,10 +22,13 @@ const App: React.SFC = ({ children }) => {
   return (
     <Router>
       <div className={style.layout}>
-        <div className={style.header}>hello world</div>
+        <div className={style.header}>
+          <div className={style.logo}>Naruto</div>
+        </div>
         <div className={style.container}>
           <div className={style.siderbar}>
             <Link to="/button">button</Link>
+            <Link to="/icon">icon</Link>
           </div>
           <div className={style.content}>
             {children}

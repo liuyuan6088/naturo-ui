@@ -5,7 +5,7 @@ import { BrowserRouter as Router, Link, Route } from "react-router-dom";
 // @ts-ignore
 import style from './index.less';
 
-import Button from './components/Button';
+import Button from './components/Button/demo';
 import Icon from './components/Icon';
 
 const Routers: React.SFC = () => {

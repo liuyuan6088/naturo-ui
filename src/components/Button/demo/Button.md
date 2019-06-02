@@ -1,6 +1,6 @@
 ---
 imports:
-  import ButtomDemo from './Button.tsx';
+  import ButtomDemo from '../index.tsx';
 ---
 
 # Button 按钮
@@ -10,7 +10,7 @@ imports:
 ### 简单示例
 
 :::demo
-  <ButtomDemo />
+  <ButtomDemo>dads</ButtomDemo>
 :::
 
 ## Props

@@ -1,7 +1,3 @@
-import * as React from 'react';
-// @ts-ignore
-import README from './aaa.md'
+import Button from './Button';
 
-export default function () {
-  return <README />
-}
+export default Button;
